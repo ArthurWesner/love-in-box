@@ -515,9 +515,9 @@ body {
         justify-content: center; /* Centraliza verticalmente */
         position: fixed; /* Fixa no topo da tela */
         width: 100%; /* Ocupa toda a largura */
-        height: 35vw; /* Define altura do cabeçalho */
+        height: 7em; /* Define altura do cabeçalho */
         z-index: 1000; /* Garante que fique acima de outros elementos */
-        padding: 3px;
+        padding: 1px;
     }
 
     .header-bg {
@@ -526,18 +526,18 @@ body {
 
     /* Ícones de mídias sociais centralizados no topo */
     .header .social-icons {
+        top: -10px;
         display: flex;
         left: 2px;
         justify-content: center; /* Centraliza os ícones */
-        gap: 160px; /* Espaçamento entre os ícones */
+        gap: 150px; /* Espaçamento entre os ícones */
         order: 1; /* Prioriza os ícones no topo */
         width: 100%; /* Garante que ocupe a largura total */
     }
 
     .header .social-icons .icon {
-        
-        width: 45px; /* Tamanho fixo dos ícones */
-        height: 45px;
+        width: 3em; /* Tamanho fixo dos ícones */
+        height: 3em;
         transition: transform 0.3s ease; /* Animação suave */
     }
 
@@ -553,25 +553,24 @@ body {
         justify-content: center;
         align-items: center;
         left: 10px;
-        order: 2; /* Posiciona o logo abaixo dos ícones */
+        order: 1; /* Posiciona o logo abaixo dos ícones */
         margin: auto; /* Espaçamento em relação aos ícones */
     }
 
     .header .logo img {
-        margin-top: -70%;
-        width: 60px; /* Tamanho fixo da logo */
+        width: 40px; /* Tamanho fixo da logo */
         height: auto; /* Mantém proporção */
-    }
+    }    
 
     /* Descrição abaixo da logo */
     .description {
         text-align: center;
-        font-size: 5vw; /* Fonte responsiva */
+        font-size: 4vw; /* Fonte responsiva */
         max-width: 90%; /* Limita a largura da descrição */
         color: #786f44; /* Cor do texto */
         margin: 1% ; /* Espaçamento dinâmico */
         order: 3; /* Posiciona a descrição abaixo da logo */
-        top: -6%;
+        top: 6%;
     }
 
 
@@ -611,7 +610,7 @@ body {
     }
 
     .header .social-icons .icon img {
-        margin: 7vw 0vw;
+        margin: 25px 0px;
         width: 100%;
         height: 100%;
     }
@@ -627,20 +626,20 @@ body {
     }
 
     .header .logo img {
-        margin-top: -70%;
-        width: 60px; /* Tamanho fixo da logo */
+        margin-top: -90%;
+        width: 50px; /* Tamanho fixo da logo */
         height: auto; /* Mantém proporção */
     }
 
     /* Descrição abaixo da logo */
-    .description {
+   .description {
         text-align: center;
-        font-size: 5vw; /* Fonte responsiva */
+        font-size: 3.7vw; /* Fonte responsiva */
         max-width: 90%; /* Limita a largura da descrição */
         color: #786f44; /* Cor do texto */
-        margin: 0% ; /* Espaçamento dinâmico */
+        margin: -5% ; /* Espaçamento dinâmico */
         order: 3; /* Posiciona a descrição abaixo da logo */
-        top: -15%;
+        top: -10%;
     }
 
 
