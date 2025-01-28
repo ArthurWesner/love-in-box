@@ -638,9 +638,9 @@ body {
         font-size: 5vw; /* Fonte responsiva */
         max-width: 90%; /* Limita a largura da descrição */
         color: #786f44; /* Cor do texto */
-        margin: 1% ; /* Espaçamento dinâmico */
+        margin: 0% ; /* Espaçamento dinâmico */
         order: 3; /* Posiciona a descrição abaixo da logo */
-        top: -6%;
+        top: -15%;
     }
 
 
