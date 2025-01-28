@@ -68,7 +68,42 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
 
+            // Adiciona o evento de clique à imagem
+            const imgElement = dataRectangle.querySelector('.data-image');
+            imgElement.addEventListener('click', () => {
+                exibirImagemExpandida(imageUrl, titulo);
+            });
+
             dataContainer.appendChild(dataRectangle);
+        });
+    }
+
+    // Função para exibir a imagem expandida
+    function exibirImagemExpandida(imageUrl, altText) {
+        let overlay = document.getElementById('image-overlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'image-overlay';
+            document.body.appendChild(overlay);
+        }
+
+        overlay.innerHTML = `
+            <div class="expanded-image-container">
+                <img src="${imageUrl}" alt="${altText}" class="expanded-image">
+                <button class="close-btn">&times;</button>
+            </div>
+        `;
+        overlay.classList.add('active');
+
+        const closeBtn = overlay.querySelector('.close-btn');
+        closeBtn.addEventListener('click', () => {
+            overlay.classList.remove('active');
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.classList.remove('active');
+            }
         });
     }
 
