@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
-
 /* Reset de margens e paddings */
 *,
 *::before,
@@ -399,7 +397,7 @@ body {
 
 /* TÃ­tulo */
 .data-title {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', arial;
     font-size: 1.8rem;
     font-weight: bold;
     color: #054dc5;
@@ -408,7 +406,7 @@ body {
 
 /* Texto */
 .data-text {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', arial;
     font-size: 1.6vw;
     color: #371d0c;
     margin: 0;
@@ -416,7 +414,7 @@ body {
 
 /* Categoria */
 .data-category {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', arial;
     font-size: 0.9rem;
     font-weight: bold;
     color: #ff6600;
@@ -546,75 +544,18 @@ body {
         height: 100%;
     }
 
-    /* Logo no meio do espaçamento entre os ícones de mídias sociais */
-    .header .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 10px;
-        order: 1; /* Posiciona o logo abaixo dos ícones */
-        margin: auto; /* Espaçamento em relação aos ícones */
-    }
-
-    .header .logo img {
-        width: 40px; /* Tamanho fixo da logo */
-        height: auto; /* Mantém proporção */
-    }    
-
-    /* Descrição abaixo da logo */
-    .description {
-        text-align: center;
-        font-size: 4vw; /* Fonte responsiva */
-        max-width: 90%; /* Limita a largura da descrição */
-        color: #786f44; /* Cor do texto */
-        margin: 1% ; /* Espaçamento dinâmico */
-        order: 3; /* Posiciona a descrição abaixo da logo */
-        top: 6%;
-    }
-
-
-
-    /* Ajusta os retÃ¢ngulos */
-    .data-rectangle {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-        text-align: center;
-        gap: 30px;
-    }
-
     .data-title {
         order: 1;
         font-size: 1.4rem;
         margin-bottom: 10px;
     }
-
-    .data-text {
-        order: 2;
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    .data-category {
-        order: 4;
-        font-size: 0.9rem;
-        text-align: center;
-    }
         
-    
     .icon {    
         width: 45px; /* Tamanho fixo dos ícones */
         height: 45px;
         transition: transform 0.3s ease; /* Animação suave */
     }
 
-    .header .social-icons .icon img {
-        margin: 25px 0px;
-        width: 100%;
-        height: 100%;
-    }
-
-    
     .header .logo {
         display: flex;
         justify-content: center;
@@ -625,7 +566,7 @@ body {
     }
 
     .header .logo img {
-        margin-top: -90%;
+        margin-top: -100%;
         width: 50px; /* Tamanho fixo da logo */
         height: auto; /* Mantém proporção */
     }
@@ -633,14 +574,12 @@ body {
     /* Descrição abaixo da logo */
    .description {
         text-align: center;
-        font-size: 3.7vw; /* Fonte responsiva */
+        font-size: 3.5vw; /* Fonte responsiva */
         max-width: 90%; /* Limita a largura da descrição */
         color: #786f44; /* Cor do texto */
-        margin: -5% ; /* Espaçamento dinâmico */
         order: 3; /* Posiciona a descrição abaixo da logo */
-        top: -10%;
+        top: -20%;
     }
-
 
 
     /* Ajusta os retÃ¢ngulos */
@@ -650,12 +589,6 @@ body {
         padding: 15px;
         text-align: center;
         gap: 30px;
-    }
-
-    .data-title {
-        order: 1;
-        font-size: 1.4rem;
-        margin-bottom: 10px;
     }
 
     .data-text {
